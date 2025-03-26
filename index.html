@@ -1,7 +1,45 @@
 <!-- <!DOCTYPE html> -->
 <html lang="en">
 
-<head>
+<head><!-- Google Tag Manager -->
+  <!-- <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-5BB8W2X');</script> -->
+  <!-- End Google Tag Manager -->
+  <link rel="icon" type="image/png" href="./laptop.png"/>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Personal Portfolio</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <!-- <link href="assets/css/style.css" rel="stylesheet"> -->
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-169007209-3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-169007209-3');
+  </script>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -19,7 +57,7 @@
   <!-- Font Awesome Icon - CSS-->
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
   <!-- Custom Styles-->
-  <link rel="stylesheet" href="/assets/css/style.css" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
   <title>Varad Bhogayata | Software Developer</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -79,15 +117,19 @@
   
   <!-- Navigation Menu-->
   <!-- Nav class 1 -->
-  <nav class="hide-on-small-only">
+  <nav  id="main-nav" class="hide-on-small-only">
     <ul class="side-nav fixed section table-of-contents">
 
-      <li class="logo">
+      <!-- <li class="logo">
         <a id="logo-container" aria-label="Navigate to the beginning of the page" href="#intro"
           class="brand-logo grey-blue-text">
           <img src="/assets/img/passport-new.jpg" class="circle img-responsive profile-pic" alt="avatar">
         </a>
-      </li>
+      </li> -->
+      <li class="bold">
+        <a aria-label="Navigate to the Home section" href="#intro" class="waves-effect waves-dark teal-text">
+          <i class="mdi-navigation-arrow-back small"></i><span>Home</span>
+        </a>
 
       <li class="bold">
         <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text"><i
@@ -204,14 +246,44 @@
   <main>
     <!-- First Section: Heading lines and image -->
     <section id="intro" class="section scrollspy full-height">
-      <div class="overlay"></div>
+      <header id="header" class="header-tops">
+
+        <div class="container">
+    
+          <h1><a href="index.html">Jacob Shin</a></h1>
+          
+          <h2 style="color:#fff">I'm a <span class="typing" style="color:#FDB515"></span></h2>
+          <!-- <nav class="nav-menu d-none d-lg-block">
+            <ul>
+              <li class="active"><a href="#header"> <span>Home</span></a></li>
+              <li><a href="#about"><span>About</span></a></li>
+              <li><a href="#education"> <span>Education</span></a></li>
+              <li><a href="#experience"> <span>Experience</span></a></li>
+              <li><a href="#portfolio"> <span>Projects</span></a></li>
+              <li><a href="#skills"> <span>Skills</span></a></li>
+              <li><a href="#links"> <span>Resume</span></a></li>
+              <li><a href="#contacts"> <span>Contact</span></a></li>
+    
+            </ul>
+          </nav> -->
+          <!-- .nav-menu -->
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/jacob-shin-cs" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            <a href="https://github.com/Jacobshin04" target="_blank" class="github"><i class="bx bxl-github"></i></a>
+            <a href="mailto:k.jacobshin@gmail.com" target="_blank" class="google"><i class="bx bxl-google"></i></a>
+    
+
+      
+        </div>
+        <!-- </header> -->
+        <!-- End Header -->
+      <!-- <div class="overlay"></div>
       <div class="container">
         <div class="col-md-9">
           <div class="content section-padding valign" style="margin-left: 10%; margin-top: 50px;">
             <div class="caption">
               <h2>Hi, I'm <span class="teal">Varad Bhogayata.</span></h2>
               <h5 style="color:#fff">A <span class="typing" style="font-weight: 300; color:#004d40"></span></h5>
-              <!-- <h5 style="color:#00796b">A <span class="typing" style="font-weight: 300; color:#fff"></span></h5> -->
               <h5>Self-driven, quick starter, passionate programmer with a curious mind who enjoys solving a complex and challenging real-world problems.</h5>
             </div>
             <div class="social">
@@ -226,19 +298,7 @@
                 </button>
               </a>
 
-              <!-- <a href="https://angel.co/u/varad_bhogayata" target="_blank">
-                <button class="icon-btn angellist">
-                  <i class="fa fa-angellist"></i>
-                </button>
-              </a> -->
-
-              <!-- <a href="http://linkedin.com/in/varadbhogayata" target="_blank">
-                  <span class="fa-stack fa-lg">
-                    <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-
-                  </span>
-              </a> -->
+  
             </div>
             <div class='buttons'>
               <a href="#about" class="readme">Read More</a>
@@ -246,7 +306,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
     </section>
 
     <!-- Second Section: About -->
@@ -1013,10 +1073,10 @@ of each drug container to estimate the degradation of the drug.
   <script src="assets/vendor/typed.js/typed.min.js"></script>
   <script type="text/javascript">
     var typed = new Typed('.typing',{
-      strings: ["Pythonist", "Developer", "Fast Learner"],
+      strings: ["Software Engineer", "Web Developer", "Critical Thinker", "Team Player", "Continuous Learner"],
       loop: true,
-      typeSpeed: 80,
-      backSpeed: 40
+      typeSpeed: 65,
+      backSpeed: 65
     });
   </script>
 
@@ -1038,6 +1098,39 @@ of each drug container to estimate the degradation of the drug.
       })
     })
   </script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const nav = document.getElementById("main-nav");
+    const introSection = document.getElementById("intro");
+    const introHeight = introSection.offsetHeight;
+
+    if (nav && nav.classList.contains("hide-on-small-only")) {
+      const mediaQuery = window.matchMedia("(min-width: 992px)");
+
+      function handleScroll() {
+        if (mediaQuery.matches) { // Only apply logic if viewport width is greater than 992px
+          if (window.scrollY > introHeight) {
+            nav.classList.add("visible"); // Show navbar
+          } else {
+            nav.classList.remove("visible"); // Hide navbar
+          }
+        } else {
+          nav.classList.remove("visible"); // Ensure navbar is hidden on smaller screens
+        }
+      }
+
+      // Add scroll event listener
+      window.addEventListener("scroll", handleScroll);
+
+      // Run the function initially to set the correct state
+      handleScroll();
+
+      // Listen for changes in viewport width
+      mediaQuery.addEventListener("change", handleScroll);
+    }
+  });
+</script>
 </body>
 
 </html>
