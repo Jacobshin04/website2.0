@@ -1,3 +1,8 @@
+/* general */
+html {
+  scroll-behavior: smooth;
+}
+
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -8,17 +13,15 @@
   width: 100%;
   z-index: 1000;
   transform: translateX(-100%) ;
-  opacity: 0; /* Start hidden */
+  visibility: visible;
   transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1), 
-              opacity 0.3s ease-in-out, 
               box-shadow 0.5s ease-in-out;
 }
 
 #main-nav.visible {
   transform: translateX(0)  !important;
-  opacity: 1; /* Fade in */
-  box-shadow: 4px 0 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
 
+  box-shadow: 4px 0 10px rgba(0, 0, 0, 0.2); 
 }
 
 #header {
@@ -109,28 +112,67 @@
 }
 
 
-
-
-.profile-pic {
-  position: relative;
-  max-width:130px;
-  max-height:130px;
-  width: auto;
-  height: auto;
-  /* overflow: hidden; */
-  /* display: inline-block; */
-  
-  
-  /* background-size: cover;  */
-  margin: -31px; 
-  margin-left:-7px;
-  border: 6px solid rgba(0, 77, 64, 0.4); 
-  border-radius: 50% !important;
+/* about */
+p {
+  display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+    margin-top: 0px;
+    margin-bottom: 1rem;
 }
 
-.profile-pic img {
-  width: 100%;
-  height: auto;
+strong {
+  font-weight: bold !important; /* Ensure bold styling is applied */
+}
+
+#about p {
+  font-size: 1.08rem;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+#about ul{
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+/* interests */
+
+.interests .icon-box {
+  display: flex;
+  align-items: center;
+  padding: 25px 30px;
+  background: #001F3F;
+  transition: ease-in-out 0.3s;
+  margin:0px 5px;
+}
+
+
+.interests .icon-box i {
+  font-size: 32px;
+  padding-right: 10px;
+  line-height: 1;
+}
+
+.interests .icon-box h3 {
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-size: 16px;
+  color: #fff;
+}
+
+.interests .icon-box:hover {
+  background: #003366;
+}
+
+.profile {
+  padding-right: 25px;
+  padding-bottom: 0 !important; 
 }
 
 .tracker {
@@ -365,7 +407,7 @@ dt {
 }
 
 ul.side-nav {
-  width: 150px;
+  width: 160px;
   background-color: rgba(3, 12, 30, 0.1);
   font-size: 19px;
   font-family: "Poppins", sans-serif;
@@ -388,7 +430,7 @@ ul.side-nav li {
 
 ul.side-nav.fixed a {
   box-sizing: content-box;
-  color: #FDB515;
+  color: #fff;
   display: block;
   line-height: 100%;
   padding: 10px 0 12px;
@@ -429,7 +471,10 @@ ul.table-of-contents li:not(.logo) a.active, ul.table-of-contents li:not(.logo) 
 }
 
 ul.side-nav.fixed.table-of-contents li:not(.logo) a span, ul#slide-out li:not(.logo) a span {
-  color: #FDB515 !important;
+  color: #fff !important;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  /* font-weight: 400; */
 }
 
 li.logo span {
@@ -448,18 +493,143 @@ li.logo span {
   width: 100%;
 }
 
-h3 {
-  font-weight: 200;
-  margin-bottom: 60px;
+.page-title{
+  font-weight: 400;
+  /* margin-bottom: 60px; */
   margin-top: 0;
-  padding: 30px 40px;
+  padding: 30px 25px;
   text-transform: uppercase;
+  background-image: linear-gradient(rgb(24, 24, 37), rgb(15, 15, 26)) !important;
+  margin-bottom: 15px;
 }
 
-.section {
+/* sections */
+.oddsection {
+  /* background-image: linear-gradient(rgb(3, 12, 30), rgb(4, 16, 39)) !important; */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), transparent);
+}
+ /* .subsection:nth-child(even) {
+  background: linear-gradient(to bottom, #030C1E, #041029);
+}
+
+.subsection:nth-child(odd) {
+  background: linear-gradient(to bottom, #041029, #030C1E);
+} */
+
+.section{
   padding-bottom: 30px;
   padding-top: 0;
+
   position: relative;
+
+}
+section {
+  /* overflow: hidden; */
+  /* position: absolute; */
+  width: 100%;
+  /* top: 140px; */
+  bottom: 100%;
+  /* opacity: 0; */
+  z-index: 2;
+}
+
+section.section-show {
+  top: 70px;
+  bottom: auto;
+  /* opacity: 1; */
+  padding-bottom: 0px;
+}
+
+section .container {
+  background: rgba(0, 0, 0, 0);
+  padding: 10px 15px;
+  max-width: 1050px;
+}
+
+@media (max-width: 768px) {
+  section {
+    top: 120px;
+  }
+  section.section-show {
+    top: 80px;
+  }
+}
+
+.section-title h5 {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0;
+  line-height: 1px;
+  margin: 20px 0 20px 0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #dee2e6;
+  font-family: "Poppins", sans-serif;
+}
+
+.section-title h5::after {
+  content: "";
+  width: 120px;
+  height: 1px;
+  display: inline-block;
+  background: #dee2e6;
+  margin: 4px 10px;
+}
+
+.section-title p {
+  margin: 0;
+  margin: -15px 0 15px 0;
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+
+.about-me .content h3 {
+  font-weight: 700;
+  font-size: 26px;
+  color: #1c7d32;
+}
+
+.about-me .content ul {
+list-style: none;
+padding: 0;
+}
+
+.about-me .content ul li {
+padding-bottom: 20px;
+}
+
+.about-me .content ul i {
+font-size: 16px;
+padding-right: 2px;
+color: #1c7d32;
+}
+
+.about-me p {
+  margin-bottom: 20px;
+}
+.about-me .content p:last-child {
+margin-bottom: 0;
+}
+
+@media (max-width: 992px) {
+  #header h1 {
+    font-size: 36px;
+  }
+  #header h2 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  #header .social-links {
+    margin-top: 15px;
+  }
+  #header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .full-height {
@@ -710,9 +880,6 @@ small {
 
 /* .teal */
 
-.teal {
-  background-color: #008073 !important;
-}
 
 /* .teal {
   background-color: #00695c !important;
@@ -769,7 +936,14 @@ small {
     display: block;
     position: fixed;
     top: 0;
-    z-index: 2;
+    z-index: 999;
+  }
+  .section {
+    margin-bottom: 50px;
+  }
+
+  .content {
+    padding: 0 30px;
   }
   .name-title {
     display: block;
@@ -791,7 +965,7 @@ small {
     display: block;
     font-size: 14px;
   }
-  h3, .container {
+  .page-title, .container {
     position: relative;
     top: 64px;
   }

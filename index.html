@@ -113,40 +113,52 @@
   <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PGZH8HT"
   height="0" width="0" style="display:none;visibility:hidden"></iframe>
-  </noscript>
-  
-  <!-- Navigation Menu-->
+</noscript>
+
+<!-- Navigation Menu-->
   <!-- Nav class 1 -->
   <nav  id="main-nav" class="hide-on-small-only">
-    <ul class="side-nav fixed section table-of-contents">
-
+    <ul class="side-nav fixed section table-of-contents" style="
+    padding-top: 100px;">
+      
       <!-- <li class="logo">
         <a id="logo-container" aria-label="Navigate to the beginning of the page" href="#intro"
-          class="brand-logo grey-blue-text">
-          <img src="/assets/img/passport-new.jpg" class="circle img-responsive profile-pic" alt="avatar">
-        </a>
-      </li> -->
+        class="brand-logo grey-blue-text">
+        <img src="/assets/img/passport-new.jpg" class="circle img-responsive profile-pic" alt="avatar">
+      </a>
+    </li> -->
       <li class="bold">
         <a aria-label="Navigate to the Home section" href="#intro" class="waves-effect waves-dark teal-text">
           <i class="mdi-navigation-arrow-back small"></i><span>Home</span>
         </a>
+      </li>
 
       <li class="bold">
         <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text"><i
-            class="mdi-social-person small"></i><span>About</span></a>
+          class="mdi-social-person small"></i><span>About</span></a>
       </li>
+
+      <li class="bold">
+        <!--
+          ICONS:
+        -->
+        <a aria-label="Navigate to the Education section" href="#education" class="waves-effect waves-dark teal-text"><i
+          class="mdi-social-school small"></i><span>Education</span></a>
+      </li>
+
+      <li class="bold">
+        <!-- mdi-av-web small
+              mdi-av-my-library-books small-->
+        <a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark teal-text"><i
+            class="mdi-av-my-library-books small"></i><span>Projects</span></a>
+      </li>
+
       <li class="bold">
         <a aria-label="Navigate to the Experience section" href="#experience"
           class="waves-effect waves-dark teal-text"><i
             class="mdi-action-trending-up small"></i><span>Experience</span></a>
       </li>
 
-      <li class="bold">
-        <!-- mdi-av-web small
-             mdi-av-my-library-books small-->
-        <a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark teal-text"><i
-            class="mdi-av-my-library-books small"></i><span>Projects</span></a>
-      </li>
 
       <li class="bold">
         <!--
@@ -159,13 +171,6 @@
             class="mdi-action-assessment small"></i><span>Skills</span></a>
       </li>
       
-      <li class="bold">
-        <!--
-        ICONS:
-        -->
-        <a aria-label="Navigate to the Education section" href="#education" class="waves-effect waves-dark teal-text"><i
-            class="mdi-social-school small"></i><span>Education</span></a>
-      </li>
 
       <li class="bold">
         <!-- 
@@ -200,8 +205,8 @@
     <a aria-label="Toggle visibility of the mobile navbar" href="#" data-activates="slide-out"
       class="button-collapse"><i class="mdi-navigation-menu"></i></a>
     <div class="name-title">
-      <a id="name" aria-label="Navigate to the beginning of the page" href="#" class="teal-text">Varad
-        Bhogayata</a><span class="black-text">Software Developer</span>
+      <a id="name" aria-label="Navigate to the beginning of the page" href="#" class="teal-text">Jacob
+        Shin</a><span class="black-text"> Passionate about making a meaningful impact with technology.</span>
     </div>
   </nav>
 
@@ -310,58 +315,103 @@
     </section>
 
     <!-- Second Section: About -->
-    <section id="about" class="section scrollspy">
-      <h3 class="page-title white-text teal">About</h3>
-      <div class="container flow-text">
-        <!-- <blockquote>
-          <h2>
-            A Software Developer with a passion for Backend Development and Artificial Intelligence.
+    <section id="about" class="section about scrollspy subsection">
+      <h4 class="page-title white-text ">About</h4>
+      <div class="container flow-text"> 
+        <div class="about-me container" >
+          <div class="row">
+            <div class="col-lg-4 profile" data-aos="fade-right">
+              <img src="assets/img/profile.jpg" class="img-fluid" alt="" >
+            </div>
+            <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+              <p>
+                I’m a passionate software developer with a strong interest in backend development, cryptography, and optimization. 
+                I love solving complex problems through efficient algorithms and building systems that make an impact.
+                My goal is to use computer science to create meaningful, real-world solutions that improve efficiency, security, and scalability.
+              </p>
+              <div class="row">
+                <div class="col-lg-6">
+                  <ul>
+                    <li><i class="icofont-rounded-right"></i> <strong>Birthday:</strong> 4 Feburary 2004</li>
+                    <li><i class="icofont-rounded-right"></i> <strong>Phone:</strong> +1 562-966-1916</li>
+                  </ul>
+                </div>
+                <div class="col-lg-6">
+                  <ul>
+                    <li><i class="icofont-rounded-right"></i> <strong>City:</strong> Berkeley, CA</li>
+                    <li><i class="icofont-rounded-right"></i> <strong>Email:</strong> jacob_shin@berkeley.edu</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      <!-- ======= Interests ======= -->
+      <div class="interests container">
 
-          </h2>
-        </blockquote> -->        
-        <p>
-          I am a Computer Science Grad Student at Arizona State University. I enjoy problem-solving and coding. Always strive to bring 100% to the work I do.
+        <div class="section-title">
+          <h5>Interests</h5>
+        </div>
 
-          I have worked on technologies like Python, Django, Flask, MySQL, PostgreSQL, MongoDB, HTML5, CSS, Java, C++ during my bachelor's. I have 19 months of professional work experience which helped me strengthen my experience in Python, Flask, and Django.
+        <div class="row">
+          <div class="col-lg-3 col-md-4">
+            <div class="icon-box">
+              <i class="ri-server-line" style="color: #ffbb2c;"></i>
+              <h3>Backend Development</h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+            <div class="icon-box">
+              <i class="ri-speed-line" style="color: #5578ff;"></i>
+              <h3>Optimization</h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+            <div class="icon-box">
+              <i class="ri-function-line" style="color: #e80368;"></i>
+              <h3>Algorithms</h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
+            <div class="icon-box">
+              <i class="ri-database-2-line" style="color: #1c7d32;"></i>
+              <h3>Databases</h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4">
+            <div class="icon-box">
+              <i class="ri-tools-line" style="color: #28a745;"></i>
+              <h3>Software Engineering</h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4">
+            <div class="icon-box">
+              <i class="ri-code-box-line" style="color: #47aeff;"></i>
+              <h3>Software Development</h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4">
+            <div class="icon-box">
+              <i class="ri-shield-keyhole-line" style="color: #ffc107;"></i>
+              <h3>Cybersecurity </h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4">
+            <div class="icon-box">
+              <i class="ri-bar-chart-box-line" style="color: #f1081f;"></i>
+              <h3>Visualization</h3>
+            </div>
+          </div>
+        </div>
 
-          I am passionate about developing complex applications that solve real-world problems impacting millions of users.
-        </p>
-        <p>
-          <ul>
-            <li><b>Languages:</b> Python, Java, JavaScript, C, C++, HTML/CSS, Bash</li>
-            <li><b>Databases:</b> MySQL, PostgreSQL, MongoDB</li>
-            <li><b>Libraries:</b> NumPy, Pandas, OpenCV</li>
-            <li><b>Frameworks:</b> Flask, Django, Node.js, Keras, TensorFlow, PyTorch, Bootstrap, Apache Beam</li>
-            <li><b>Tools & Technologies:</b> Git, Docker, AWS, GCP, Heroku, JIRA</li>
-          </ul>
-          
-        </p>
-          
-        <!-- <p>
-          
-          Detail-oriented Software Developer with professional experience in Backend Development, Machine Learning, Computer Vision. I am adept in Python, Django, Flask, SQL, Machine Learning, Computer Vision.           
-        </p> -->
-        <p>
-          Looking for an opportunity to work in a challenging position combining my skills in Software Engineering, which provides professional development, interesting experiences and personal growth.
-        </p>
-        <!-- <p>
-          Another Paragraph
-        </p>  -->
-        <!-- <p>
-        <strong>Current Focus</strong>:&nbsp;<a aria-label="Navigate to the Inclusive Design Patterns homepage"
-          href="https://www.smashingmagazine.com/inclusive-design-patterns/">Accessibility</a>&nbsp;//&nbsp;<a
-          aria-label="Navigate to the Full Stack React homepage"
-          href="https://www.fullstackreact.com/">React</a>&nbsp;//&nbsp;<a
-          aria-label='Navigate to the article "Scalable CSS"'
-          href="https://mrmrs.github.io/writing/2016/03/24/scalable-css/">Design Systems</a>
-        </p> -->
+      </div><!-- End Interests -->
       </div>
     </section>
 
 
     <!-- Third Section: Experience -->
-    <section id="experience" class="section scrollspy">
-      <h3 class="page-title white-text teal">Experience</h3>
+    <section id="experience" class="section scrollspy subsection">
+      <h4 class="page-title ">Experience</h>
       <div class="container">
 
         <!-- Latest Experience -->
@@ -521,7 +571,7 @@ of each drug container to estimate the degradation of the drug.
     </section>
 
     <!-- Fourth Section: Projects -->
-    <section id="projects" class="section scrollspy">
+    <section id="projects" class="section scrollspy subsetion">
       <h3 class="page-title white-text teal">Projects</h3>
       <div class="container">
         <div class="row">
@@ -830,7 +880,7 @@ of each drug container to estimate the degradation of the drug.
     </section>
 
     <!-- Fifth Section: Skills -->
-    <section id="skills" class="section scrollspy">
+    <section id="skills" class="section scrollspy subsetion">
       <h3 class="page-title white-text teal">Skills</h3>
       <div class="container">
         <!-- Languages and Databases -->
@@ -968,7 +1018,7 @@ of each drug container to estimate the degradation of the drug.
     </section>
 
     <!-- Seventh Section: Education -->
-    <section id="education" class="section scrollspy">
+    <section id="education" class="section scrollspy subsetion">
       <h3 class="page-title white-text teal">Education</h3>
       <div class="container">
         <div class="row">
@@ -1037,7 +1087,7 @@ of each drug container to estimate the degradation of the drug.
     </section>
 
     <!-- Eight Section: Contact -->
-    <section id="contact" class="section scrollspy full-height">
+    <section id="contact" class="section scrollspy full-height subsetion">
       <h3 class="page-title white-text teal">Contact</h3>
       <div class="container">
         <p>
@@ -1103,7 +1153,7 @@ of each drug container to estimate the degradation of the drug.
   document.addEventListener("DOMContentLoaded", function () {
     const nav = document.getElementById("main-nav");
     const introSection = document.getElementById("intro");
-    const introHeight = introSection.offsetHeight;
+    const introHeight = introSection.offsetHeight - 1;
 
     if (nav && nav.classList.contains("hide-on-small-only")) {
       const mediaQuery = window.matchMedia("(min-width: 992px)");
