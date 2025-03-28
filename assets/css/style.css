@@ -404,6 +404,17 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 4px 0 10px rgba(0, 0, 0, 0.2); 
 }
 
+@media(max-width: 992px) {
+  #header{
+    height:75vh !important;
+  }
+}
+@media(max-width: 768px) {
+  #header{
+    height:40vh !important;
+  }
+}
+
 #header {
   transition: ease-in-out 0s;
   position: relative;
@@ -1321,9 +1332,10 @@ small {
     width: 100%;
   }
   nav {
-    background: #030C1E;
+    background: rgb(24, 24, 37) ;
     height: 64px;
     position: absolute;
+    box-shadow: black;
   }
   nav a.button-collapse, nav a.button-collapse i {
     color: #FDB515;
@@ -1352,10 +1364,11 @@ small {
   .name-title {
     display: block;
     height: 100%;
-    padding-top: 15px;
+    padding-top: 12px;
     text-align: center;
     width: 100%;
     position: absolute;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
   }
   .name-title>span, .name-title>a {
     position: relative;
