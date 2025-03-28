@@ -1,7 +1,22 @@
+.col-lg-12 {
+  box-sizing: border-box;
+}
 
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
+
+@media (min-width: 768px) {
+  #contact .container {
+      max-width: 720px !important;
+  }
+}
+@media (min-width: 576px) {
+  #contact .container {
+      max-width: 540px;
+  }
+}
+
 .contact .info-box {
   color: #444444;
   padding: 20px;
@@ -12,7 +27,6 @@
 @media (min-width: 1200px) {
   #contact .container {
     width: 1300px;
-    margin: 0 50px;
   }
 }
 
@@ -266,6 +280,8 @@
   transition: all ease-in-out 0.3s;
   margin: 10px;
   border-radius: 10px; 
+  width: calc(100% - 20px);
+
 }
 
 .services .icon-box .icon {
@@ -916,9 +932,13 @@ section.section-show {
 section .container {
   background: rgba(0, 0, 0, 0);
   padding: 10px 15px;
-  max-width: 1050px;
 }
 
+@media (min-width: 992px){
+  section .container {
+    max-width: 1050px;
+  }
+}
 
 @media (max-width: 768px) {
   section {
@@ -1311,7 +1331,6 @@ small {
     line-height: 56px;
   }
   h3 {
-    padding: 20px 30px;
     margin-bottom: 40px;
   }
   .container {
