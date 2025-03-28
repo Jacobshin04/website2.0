@@ -1368,7 +1368,7 @@ small {
     text-align: center;
     width: 100%;
     position: absolute;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   }
   .name-title>span, .name-title>a {
     position: relative;
