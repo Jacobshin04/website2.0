@@ -958,10 +958,10 @@ section .container {
   }
 }
 
-@media (max-width: 768px) {
-  /* section {
-    top: 120px;
-  } */
+@media (max-width: 992px) {
+  section {
+    top: -64px;
+  }
   /* section.section-show {
     top: 80px;
   } */
