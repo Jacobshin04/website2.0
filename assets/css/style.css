@@ -6,12 +6,12 @@
 # Contact
 --------------------------------------------------------------*/
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   #contact .container {
-      max-width: 720px !important;
+      max-width: 720px;
   }
 }
-@media (min-width: 576px) {
+@media (max-width: 576px) {
   #contact .container {
       max-width: 540px;
   }
