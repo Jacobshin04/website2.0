@@ -1659,11 +1659,11 @@ small {
   transition-delay: 0.45s;
 }
 
-/* Unified Animation System */
+/* Optimized Animation System */
 .fade-up {
   opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  transform: translateY(15px);
+  transition: opacity 0.3s ease-out, transform 0.3s ease-out;
   will-change: opacity, transform;
 }
 
@@ -1672,32 +1672,24 @@ small {
   transform: translateY(0);
 }
 
-/* Stagger delays for groups of elements */
+/* Stagger delays - reduced and only for major elements */
 .stagger-1 {
   transition-delay: 0.1s;
 }
 
 .stagger-2 {
-  transition-delay: 0.2s;
+  transition-delay: 0.15s;
 }
 
 .stagger-3 {
-  transition-delay: 0.3s;
+  transition-delay: 0.2s;
 }
 
-.stagger-4 {
-  transition-delay: 0.4s;
-}
-
-.stagger-5 {
-  transition-delay: 0.5s;
-}
-
-/* Section specific adjustments */
+/* Section titles - slightly more pronounced */
 .page-title {
   opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  transform: translateY(15px);
+  transition: opacity 0.4s ease-out, transform 0.4s ease-out;
   will-change: opacity, transform;
 }
 
@@ -1706,24 +1698,35 @@ small {
   transform: translateY(0);
 }
 
-/* About section */
-.about-text-animated {
+/* Major content blocks */
+.about-text-animated,
+.portfolio-item,
+.animated-card {
   opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  transform: translateY(15px);
+  transition: opacity 0.3s ease-out, transform 0.3s ease-out;
   will-change: opacity, transform;
 }
 
-.about-text-animated.animate {
+.about-text-animated.animate,
+.portfolio-item.animate,
+.animated-card.animate {
   opacity: 1;
   transform: translateY(0);
 }
 
-/* Interest boxes */
+/* Interest boxes - quick and subtle animation */
 .interests .icon-box {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background: #001F3F;
+  border-radius: 12px;
+  margin: 0 5px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
   opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease-out, transform 0.3s ease-out, background-color 0.3s ease;
   will-change: opacity, transform;
 }
 
@@ -1732,41 +1735,23 @@ small {
   transform: translateY(0);
 }
 
-/* Experience boxes */
-.animated-card {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-  will-change: opacity, transform;
+.interests .icon-box:hover {
+  transform: translateY(-4px);
 }
 
-.animated-card.animate {
-  opacity: 1;
-  transform: translateY(0);
+/* Remove animations from less important elements */
+p,
+.info-box i,
+.social-links a,
+ul li,
+.icon-box i {
+  opacity: 1 !important;
+  transform: none !important;
+  transition: none !important;
 }
 
-/* Portfolio items */
-.portfolio-item {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-  will-change: opacity, transform;
-}
-
-.portfolio-item.animate {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* Contact boxes */
-.info-box {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-  will-change: opacity, transform;
-}
-
-.info-box.animate {
-  opacity: 1;
-  transform: translateY(0);
+/* Keep hover effects for interactive elements */
+.social-links a,
+.icon-box:hover {
+  transition: transform 0.3s ease, color 0.3s ease !important;
 }
