@@ -1804,8 +1804,7 @@ ul li,
 
 /* Project detail pages mobile padding */
 @media (max-width: 768px) {
-  .portfolio-details {
-  }
+
 
   .portfolio-details .portfolio-info {
     padding: 20px 15px;
@@ -1821,5 +1820,6 @@ ul li,
     padding-top: 30px;
     position: relative;
     top: 30px;
+    padding-bottom: 30px;
   }
 }
