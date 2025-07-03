@@ -596,22 +596,15 @@ strong {
   align-items: center;
   padding: 20px;
   background: #001F3F;
-  /* Modern dark background */
   border-radius: 12px;
-  /* Rounded corners */
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
   margin: 0 5px;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
-  /* Subtle shadow (optional) */
-}
-
-.interests .icon-box.animate {
-  opacity: 1;
-  transform: translateY(0);
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .interests .icon-box:hover {
-  transform: translateY(-4px);
+  transform: translateY(-3px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
 }
 
 .interests .icon-box i {
@@ -1723,11 +1716,8 @@ small {
   background: #001F3F;
   border-radius: 12px;
   margin: 0 5px;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
-  opacity: 0;
-  transform: translateY(10px);
-  transition: opacity 0.3s ease-out, transform 0.3s ease-out, background-color 0.3s ease;
-  will-change: opacity, transform;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .interests .icon-box.animate {
@@ -1736,7 +1726,8 @@ small {
 }
 
 .interests .icon-box:hover {
-  transform: translateY(-4px);
+  transform: translateY(-3px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
 }
 
 /* Remove animations from less important elements */
@@ -1753,5 +1744,60 @@ ul li,
 /* Keep hover effects for interactive elements */
 .social-links a,
 .icon-box:hover {
-  transition: transform 0.3s ease, color 0.3s ease !important;
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1), color 0.25s ease;
+}
+
+/* Project cards */
+.portfolio-wrap {
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-wrap:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Experience and education cards */
+.animated-card {
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.animated-card:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Contact boxes */
+.info-box {
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.info-box:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Social links hover */
+.social-links a {
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1), color 0.25s ease;
+}
+
+.social-links a:hover {
+  transform: translateY(-2px);
+}
+
+/* Navigation links hover */
+.side-nav a {
+  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Skills section icons */
+#skills .icon-box {
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#skills .icon-box:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
 }
