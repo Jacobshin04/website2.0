@@ -1801,3 +1801,25 @@ ul li,
   transform: translateY(-3px);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
 }
+
+/* Project detail pages mobile padding */
+@media (max-width: 768px) {
+  .portfolio-details {
+  }
+
+  .portfolio-details .portfolio-info {
+    padding: 20px 15px;
+  }
+
+  #main {
+    padding: 0 20px !important;
+  }
+
+  .portfolio-details .container {
+    height: auto !important;
+    min-height: 100vh;
+    padding-top: 30px;
+    position: relative;
+    top: 30px;
+  }
+}
