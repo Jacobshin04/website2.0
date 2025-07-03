@@ -8,12 +8,13 @@
 
 @media (max-width: 768px) {
   #contact .container {
-      max-width: 720px;
+    max-width: 720px;
   }
 }
+
 @media (max-width: 576px) {
   #contact .container {
-      max-width: 540px;
+    max-width: 540px;
   }
 }
 
@@ -144,7 +145,8 @@
   border-radius: 4px;
 }
 
-.portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
+.portfolio #portfolio-flters li:hover,
+.portfolio #portfolio-flters li.filter-active {
   background: #4B000F;
 }
 
@@ -279,15 +281,17 @@
   padding: 40px 40px;
   transition: all ease-in-out 0.3s;
   margin: 10px;
-  border-radius: 10px; 
+  border-radius: 10px;
   width: calc(100% - 20px);
   box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
   /* box-shadow: inset 4px 4px 10px rgba(0, 0, 0, 0.2); */
 }
+
 .contact .info-box {
   box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
-  border-radius: 10px; 
+  border-radius: 10px;
 }
+
 .services .icon-box .icon {
   margin: 0 auto;
   width: 64px;
@@ -353,40 +357,64 @@
   background: #F1FFFA;
 }
 
-.services .icon-box:hover h4 a, .services .icon-box:hover p {
+.services .icon-box:hover h4 a,
+.services .icon-box:hover p {
   color: #FDB515;
 }
 
 #education ul li {
   list-style-type: disc;
-  list-style-position: inside; /* Place the marker inside the <li> */
+  list-style-position: inside;
+  /* Place the marker inside the <li> */
   padding-left: 20px;
 }
+
 #education ul li::marker {
   color: white !important;
 }
+
 .services .icon-box h5 {
   font-size: 1.4rem;
 }
-.services .icon-box h6, li {
+
+.services .icon-box h6,
+li {
   font-size: 1.1rem;
 }
+
 #education .container {
   margin-top: 30px;
   margin-bottom: 200px;
   max-width: 1150px !important;
 }
 
-.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-bottom: .5rem;
   font-weight: 500;
   line-height: 1.2;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-top: 0;
   margin-bottom: .5rem;
 }
+
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -396,29 +424,33 @@ h1, h2, h3, h4, h5, h6 {
   top: 0;
   width: 100%;
   z-index: 1000;
-  transform: translateX(-100%) ;
+  transform: translateX(-100%);
   visibility: visible;
-  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), 
-              box-shadow 0.4s ease-in-out;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.4s ease-in-out;
+
 }
 
-#main-nav.visible {
-  transform: translateX(0)  !important;
 
-  box-shadow: 4px 0 10px rgba(0, 0, 0, 0.2); 
+#main-nav.visible {
+  transform: translateX(0) !important;
+
+  box-shadow: 4px 0 10px rgba(0, 0, 0, 0.2);
 }
 
 @media(max-width: 992px) {
-  #header{
-    height:90vh !important;
+  #header {
+    height: 90vh !important;
   }
-  #header h6{
+
+  #header h6 {
     text-align: center;
   }
 }
+
 @media(max-width: 768px) {
-  #header{
-    height:90vh !important;
+  #header {
+    height: 90vh !important;
   }
 }
 
@@ -441,8 +473,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header h6 {
-  font-size: 16px; 
-  color:#CCCCCC;
+  font-size: 16px;
+  color: #CCCCCC;
   margin-top: -5px;
   margin-bottom: 5px;
   letter-spacing: -0.3px;
@@ -459,7 +491,8 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Poppins", sans-serif;
 }
 
-#header h1 a, #header h1 a:hover {
+#header h1 a,
+#header h1 a:hover {
   color: #dee2e6;
   line-height: 1;
   display: inline-block;
@@ -509,13 +542,16 @@ h1, h2, h3, h4, h5, h6 {
   #header h1 {
     font-size: 36px;
   }
+
   #header h2 {
     font-size: 20px;
     line-height: 30px;
   }
+
   #header .social-links {
     margin-top: 15px;
   }
+
   #header .container {
     display: flex;
     flex-direction: column;
@@ -527,17 +563,18 @@ h1, h2, h3, h4, h5, h6 {
 /* about */
 p {
   display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    unicode-bidi: isolate;
-    margin-top: 0px;
-    margin-bottom: 1rem;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  unicode-bidi: isolate;
+  margin-top: 0px;
+  margin-bottom: 1rem;
 }
 
 strong {
-  font-weight: bold !important; /* Ensure bold styling is applied */
+  font-weight: bold !important;
+  /* Ensure bold styling is applied */
 }
 
 #about p {
@@ -546,11 +583,12 @@ strong {
   line-height: 1.4;
 }
 
-#about ul{
+#about ul {
   font-size: 1.1rem;
   font-weight: 400;
   line-height: 1.5;
 }
+
 /* interests */
 
 .interests .icon-box {
@@ -558,10 +596,23 @@ strong {
   align-items: center;
   padding: 20px;
   background: #001F3F;
-  transition: ease-in-out 0.3s;
-  margin:0px 5px;
+  /* Modern dark background */
+  border-radius: 12px;
+  /* Rounded corners */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 0 5px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+  /* Subtle shadow (optional) */
 }
 
+.interests .icon-box.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.interests .icon-box:hover {
+  transform: translateY(-4px);
+}
 
 .interests .icon-box i {
   font-size: 32px;
@@ -570,6 +621,9 @@ strong {
 }
 
 .interests .icon-box h3 {
+  font-size: 18px;
+  color: #FDB515;
+  margin-bottom: 0;
   font-weight: 700;
   margin: 0;
   padding: 0;
@@ -582,29 +636,27 @@ strong {
   .interests .icon-box h3 {
     font-size: 14px;
   }
+
   .interests .icon-box {
     padding: 18px;
   }
 }
 
-.interests .icon-box:hover {
-  background: #003366;
-}
-
 .profile {
   padding-right: 25px;
-  padding-bottom: 0 !important; 
+  padding-bottom: 0 !important;
 }
 
 .tracker {
   /* visibility: hidden; */
   position: fixed;
   /* margin-inline-end: auto;  */
-  bottom: 0; 
+  bottom: 0;
   right: 0;
 }
 
 @import url(https://fonts.googleapis.com/css?family=Poiret+One);
+
 .social {
   margin: 0 auto;
   width: auto;
@@ -691,10 +743,11 @@ strong {
   -webkit-border-radius: 5px;
 }
 
-.contactme:hover{
+.contactme:hover {
   color: #00796b;
   background-color: white;
 }
+
 /* main body */
 
 /* body-color */
@@ -737,7 +790,12 @@ a:hover {
   text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Raleway", sans-serif;
 }
 
@@ -828,24 +886,28 @@ dt {
 }
 
 nav #slide-out {
-  background-color:rgba(3, 12, 30, 0.1) !important;
+  background-color: rgba(3, 12, 30, 0.1) !important;
   background: none;
 }
+
 ul.side-nav {
   width: 190px;
-  background: linear-gradient(to bottom, #2A2A2A, #1A1A1A);
+  background: linear-gradient(to bottom,
+      rgba(42, 42, 42, 0.6),
+      rgba(26, 26, 26, 0.6));
   box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
   font-size: 19px;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
-
   padding-top: 50px;
-  height: 900;
+  height: 900px;
+  backdrop-filter: blur(10px);
 }
+
 
 ul.side-nav li {
   padding: 0;
-  
+
 }
 
 ul.side-nav.fixed a {
@@ -853,21 +915,22 @@ ul.side-nav.fixed a {
   display: block;
   line-height: 100%;
   padding: 10px 0 12px;
-  
+
 }
 
 ul.side-nav.fixed a {
   box-sizing: content-box;
-  color: #D9D9D9 ;
+  color: #D9D9D9;
   display: block;
   line-height: 100%;
   padding: 10px 5 12px;
 }
 
-ul.table-of-contents li.logo a.active, ul.table-of-contents li.logo a:hover {
+ul.table-of-contents li.logo a.active,
+ul.table-of-contents li.logo a:hover {
   border: none;
   font-weight: 200;
-  color: #D9D9D9 ;
+  color: #D9D9D9;
   font-size: 19px;
   font-weight: 400;
 }
@@ -894,13 +957,15 @@ ul.side-nav.fixed li.logo a {
   line-height: 100%;
 }
 
-ul.table-of-contents li:not(.logo) a.active, ul.table-of-contents li:not(.logo) a:hover {
+ul.table-of-contents li:not(.logo) a.active,
+ul.table-of-contents li:not(.logo) a:hover {
   background-color: #2A2A2A;
   border-left: 3px solid;
 }
 
-ul.side-nav.fixed.table-of-contents li:not(.logo) a span, ul#slide-out li:not(.logo) a span {
-  color: #D9D9D9  !important;
+ul.side-nav.fixed.table-of-contents li:not(.logo) a span,
+ul#slide-out li:not(.logo) a span {
+  color: #D9D9D9 !important;
   font-size: 16px;
   font-family: "Poppins", sans-serif;
   /* font-weight: 400; */
@@ -922,16 +987,25 @@ li.logo span {
   width: 100%;
 }
 
-.page-title{
+.page-title {
   font-weight: 400;
-  /* margin-bottom: 60px; */
   margin-top: 0;
   padding: 30px 25px;
   text-transform: uppercase;
-  background-image: linear-gradient(rgb(24, 24, 37), rgb(15, 15, 26)) !important;
-  margin-bottom: 15px;
-  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
 
+  /* Semi-transparent gradient background */
+  background: linear-gradient(to right,
+      rgba(24, 24, 37, 0.85),
+      rgba(15, 15, 26, 0.7));
+
+  /* Frosted blur effect behind */
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+
+  margin-bottom: 15px;
+
+  /* Optional: subtle inset shadow for depth */
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 /* sections */
@@ -946,13 +1020,14 @@ li.logo span {
   background: linear-gradient(to bottom, #1A1A2E, #030C1E);
 }  */
 
-.section{
+.section {
   padding-bottom: 30px;
   padding-top: 0;
 
   position: relative;
 
 }
+
 section {
   /* overflow: hidden; */
   /* position: absolute; */
@@ -975,7 +1050,7 @@ section .container {
   padding: 10px 15px;
 }
 
-@media (min-width: 992px){
+@media (min-width: 992px) {
   section .container {
     max-width: 1050px;
   }
@@ -985,6 +1060,7 @@ section .container {
   section {
     top: -64px;
   }
+
   /* section.section-show {
     top: 80px;
   } */
@@ -1028,38 +1104,42 @@ section .container {
 }
 
 .about-me .content ul {
-list-style: none;
-padding: 0;
+  list-style: none;
+  padding: 0;
 }
 
 .about-me .content ul li {
-padding-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 .about-me .content ul i {
-font-size: 16px;
-padding-right: 2px;
-color: #1c7d32;
+  font-size: 16px;
+  padding-right: 2px;
+  color: #1c7d32;
 }
 
 .about-me p {
   margin-bottom: 20px;
 }
+
 .about-me .content p:last-child {
-margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 @media (max-width: 992px) {
   #header h1 {
     font-size: 36px;
   }
+
   #header h2 {
     font-size: 20px;
     line-height: 30px;
   }
+
   #header .social-links {
     margin-top: 15px;
   }
+
   #header .container {
     display: flex;
     flex-direction: column;
@@ -1240,11 +1320,13 @@ a.hoverline:hover {
 #skills .icon-box {
   padding: 33px 40px;
   margin-bottom: 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a soft shadow */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* Add a soft shadow */
 }
 
 #skills .icon-box img {
-  max-height: 120px; /* Increase from 100px to 120px */
+  max-height: 120px;
+  /* Increase from 100px to 120px */
 }
 
 /* #skills h4 {
@@ -1356,11 +1438,13 @@ small {
     padding-left: 0px;
     padding-top: 64px;
   }
+
   ul.side-nav a {
     line-height: 100%;
     padding: 0;
     width: 100%;
   }
+
   nav {
     background: linear-gradient(to bottom, #2A2A2A, #1A1A1A);
     box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
@@ -1368,27 +1452,33 @@ small {
     position: absolute;
     box-shadow: black;
   }
+
   ul.side-nav li:hover {
     background-color: #bcbcbc;
   }
-  
-  nav a.button-collapse, nav a.button-collapse i {
+
+  nav a.button-collapse,
+  nav a.button-collapse i {
     color: #FDB515;
     height: 56px;
     line-height: 56px;
   }
+
   h3 {
     margin-bottom: 40px;
   }
+
   .container {
     margin: 0 auto;
   }
+
   nav.hide-on-large.only.trigger {
     display: block;
     position: fixed;
     top: 0;
     z-index: 999;
   }
+
   .section {
     margin-bottom: 50px;
   }
@@ -1396,6 +1486,7 @@ small {
   .content {
     padding: 0 30px;
   }
+
   .name-title {
     display: block;
     height: 100%;
@@ -1405,25 +1496,33 @@ small {
     position: absolute;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   }
-  .name-title>span, .name-title>a {
+
+  .name-title>span,
+  .name-title>a {
     position: relative;
     line-height: 20px;
   }
+
   .name-title a {
     font-size: 22px;
     display: block;
   }
+
   .name-title span {
     display: block;
     font-size: 14px;
   }
-  .page-title, .container {
+
+  .page-title,
+  .container {
     position: relative;
     top: 64px;
   }
+
   section#intro {
     margin-bottom: -64px;
   }
+
   .card .role {
     position: relative;
     right: initial;
@@ -1437,36 +1536,237 @@ small {
     line-height: 200%;
     margin: 30px 0 0;
   }
+
   #intro.section .container *:not(span) {
     padding: 0;
   }
+
   .card .card-content .card-title {
     font-size: 20px;
     line-height: 24px;
   }
+
   #experience span.card-title {
     text-align: center;
     display: block;
   }
+
   #experience span.card-title a {
     margin: 0;
   }
+
   i.mdi-navigation-close.right {
     position: relative;
     bottom: 15px;
   }
+
   #contact a:not(.btn-floating) {
     text-align: center;
     display: block;
     left: initial;
     bottom: initial;
   }
+
   #contact a.btn-floating.btn-large {
     display: block;
     text-align: center;
     margin: 0 auto;
   }
+
   #intro.section {
     background-position-x: 30%;
   }
+}
+
+/* Animated card base styles */
+.animated-card {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.3s ease-out;
+}
+
+.animated-card.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Experience section specific styles */
+#experience .animated-card {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.3s ease-out;
+}
+
+#experience .animated-card.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* About Section Animations */
+.about-text-animated {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.3s ease-out;
+}
+
+.about-text-animated.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Interest boxes animation */
+.interests .icon-box {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.3s ease-out;
+}
+
+.interests .icon-box.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Add slight stagger to interest boxes */
+.interests .icon-box:nth-child(1) {
+  transition-delay: 0.1s;
+}
+
+.interests .icon-box:nth-child(2) {
+  transition-delay: 0.15s;
+}
+
+.interests .icon-box:nth-child(3) {
+  transition-delay: 0.2s;
+}
+
+.interests .icon-box:nth-child(4) {
+  transition-delay: 0.25s;
+}
+
+.interests .icon-box:nth-child(5) {
+  transition-delay: 0.3s;
+}
+
+.interests .icon-box:nth-child(6) {
+  transition-delay: 0.35s;
+}
+
+.interests .icon-box:nth-child(7) {
+  transition-delay: 0.4s;
+}
+
+.interests .icon-box:nth-child(8) {
+  transition-delay: 0.45s;
+}
+
+/* Unified Animation System */
+.fade-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  will-change: opacity, transform;
+}
+
+.fade-up.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger delays for groups of elements */
+.stagger-1 {
+  transition-delay: 0.1s;
+}
+
+.stagger-2 {
+  transition-delay: 0.2s;
+}
+
+.stagger-3 {
+  transition-delay: 0.3s;
+}
+
+.stagger-4 {
+  transition-delay: 0.4s;
+}
+
+.stagger-5 {
+  transition-delay: 0.5s;
+}
+
+/* Section specific adjustments */
+.page-title {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  will-change: opacity, transform;
+}
+
+.page-title.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* About section */
+.about-text-animated {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  will-change: opacity, transform;
+}
+
+.about-text-animated.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Interest boxes */
+.interests .icon-box {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  will-change: opacity, transform;
+}
+
+.interests .icon-box.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Experience boxes */
+.animated-card {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  will-change: opacity, transform;
+}
+
+.animated-card.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Portfolio items */
+.portfolio-item {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  will-change: opacity, transform;
+}
+
+.portfolio-item.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Contact boxes */
+.info-box {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  will-change: opacity, transform;
+}
+
+.info-box.animate {
+  opacity: 1;
+  transform: translateY(0);
 }
