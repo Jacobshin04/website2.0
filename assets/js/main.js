@@ -4,7 +4,7 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
-!(function($) {
+!(function ($) {
   "use strict";
   // Porfolio isotope and filter
   $(document).ready(function () {
@@ -12,22 +12,44 @@
       itemSelector: '.portfolio-item',
       layoutMode: 'fitRows'
     });
-  
+
     $('#portfolio-flters li').on('click', function () {
       $('#portfolio-flters li').removeClass('filter-active');
       $(this).addClass('filter-active');
-  
+
       portfolioIsotope.isotope({
         filter: $(this).data('filter')
       });
     });
-  });
-  
-  // Initiate venobox (lightbox feature used in portofilo)
-  $(document).ready(function() {
-    $('.venobox').venobox();
+
+    // Add scroll animation for page titles
+    function checkAnimation() {
+      $('.page-title').each(function () {
+        var element = $(this);
+        var position = element.offset().top;
+        var scroll = $(window).scrollTop();
+        var windowHeight = $(window).height();
+
+        // Check if element is in viewport with offset
+        if (scroll + windowHeight > position + 50) {
+          element.addClass('animate');
+        }
+      });
+    }
+
+    // Run on page load
+    checkAnimation();
+
+    // Run on scroll
+    $(window).scroll(function () {
+      checkAnimation();
+    });
   });
 
+  // Initiate venobox (lightbox feature used in portofilo)
+  $(document).ready(function () {
+    $('.venobox').venobox();
+  });
 
   // Nav Menu
   // $(document).on('click', '.nav-menu a, .mobile-nav a', function(e) {
@@ -121,8 +143,8 @@
   });
 
   // Skills section
-  $('.skills-content').waypoint(function() {
-    $('.progress .progress-bar').each(function() {
+  $('.skills-content').waypoint(function () {
+    $('.progress .progress-bar').each(function () {
       $(this).css("width", $(this).attr("aria-valuenow") + '%');
     });
   }, {
